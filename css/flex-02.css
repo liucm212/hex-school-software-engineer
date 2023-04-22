@@ -1,0 +1,41 @@
+.container{
+  width: 1200px;
+  margin:0 auto;
+}
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  
+}
+.content .content-item{
+  width: 550px;
+  padding: 200px 0px;
+  margin-right: 20px;
+  background-color: #e7eeea;
+  border-radius: 10px;
+}
+.content-item img{
+  display: block;/* 設定display:block才可以對他做移動;*/
+  margin: 0 auto;
+}
+.content-item h2{
+  font-size: 25px;
+  color: #37523d;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.content-item p{
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.content-item h3{
+  font-size: 20px;
+  color: #37523d;
+  font-weight: bold;
+}
+.content-item h2, .content-item p, .content-item h3{
+  margin-left: 40px;
+}
