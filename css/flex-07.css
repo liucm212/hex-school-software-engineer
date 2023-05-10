@@ -1,0 +1,57 @@
+/* *{
+  outline: 1px solid black;
+} */
+body{
+  background-color: #37523d;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+h1{
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #37523d;
+}
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 300px 0;
+  background-color: #e7eeea;
+}
+.header-img{
+  margin-bottom: 20px;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.footer-img{
+  margin-left: 20px;
+}
+.footer-menu{
+  display: flex;
+  justify-content: center;
+}
+.footer-menu-item a{
+  display: block; /* block才可以調padding*/
+  padding:  40px 20px;
+  font-size: 16px;/* default*/
+  text-decoration: none;
+  color: #37523d;
+  transition: 0.3s;
+}
+.footer-menu-item a:hover{
+  color: #fff;
+  background-color: #37523d;
+}
