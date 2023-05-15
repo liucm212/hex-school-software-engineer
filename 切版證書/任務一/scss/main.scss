@@ -1,0 +1,81 @@
+@import '_reset' ;  
+
+// 測試好將scss轉成css時自動將css檔案匯到css資料夾。
+*{
+  // outline: auto;
+  box-sizing: border-box;
+}
+body{
+  color: #020202;
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  line-height: 1.5;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0 ;
+}
+
+
+
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.tool{
+  &-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.card{
+  width: 30%;
+  max-width: 416px;
+  margin:0 12px 12px 12px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  &-intro{
+    padding: 20px 32px;
+    border-bottom: 1px solid #eee;
+    min-height: 118px;
+  }
+  &-title{
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  &-subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    color: #525252;
+  }
+  &-ai{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 32px;
+    border-bottom: 1px solid #eee;
+    h4{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+    }
+    p{
+      font-weight: 400;
+      font-size: 16px;
+      text-align: right;
+    }
+  }
+  &-tag{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 32px;
+    a{
+      text-decoration: none;
+      color: #020202;
+    }
+  }
+}
