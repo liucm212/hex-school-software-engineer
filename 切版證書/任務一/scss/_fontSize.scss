@@ -1,0 +1,67 @@
+//! 專門在記錄跟文字有關的尺寸：font-size, font-weight, line-height....
+
+.fz{
+  &-1{
+    font-size: 0.75rem;
+  }
+  &-2{
+    font-size: 1rem;
+  }
+  &-3{
+    font-size: 1.25rem;
+  }
+  &-4{
+    font-size: 1.5rem;
+  }
+  &-5{
+    font-size: 1.75rem;
+  }
+  &-6{
+    font-size: 2rem;
+  }
+}
+
+// font-weight
+.fw{
+  &-100{
+    font-weight:100;
+  }
+  &-200{
+    font-weight:200;
+  }
+  &-300{
+    font-weight: 300;
+  }
+  &-400{
+    font-weight: 400;
+  }
+  &-500{
+    font-weight: 500;
+  }
+  &-600{
+    font-weight:600;
+  }
+  &-700{
+    font-weight:700;
+  }
+  &-800{
+    font-weight:800;
+  }
+  &-900{
+    font-weight:900;
+  }
+}
+
+
+// line-height
+.lh{
+  &-m{
+    line-height: 1;
+  }
+  &-l{
+    line-height: 1.25;
+  }
+  &-xl{
+    line-height: 1.5;
+  }
+}

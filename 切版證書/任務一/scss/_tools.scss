@@ -1,0 +1,29 @@
+//! 紀錄各種功能性的classes的檔案
+
+//! flex
+.d-flex{
+  display: flex;
+}
+.flex-column{
+  flex-direction: column;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.justify-content-spaceBetween{
+  justify-content: space-between;
+}
+.justify-content-spaceAround{
+  justify-content: space-around;
+}
+.align-items-center{
+  align-items: center;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+//! overflow-hidden
+.overflow-hidden{
+  overflow: hidden;
+}

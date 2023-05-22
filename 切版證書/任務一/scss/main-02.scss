@@ -1,0 +1,52 @@
+@import '_reset' ;  
+@import '_spaceSize' ; 
+@import '_fontSize' ;
+@import '_tools' ; 
+// 測試好將scss轉成css時自動將css檔案匯到css資料夾。
+body{
+  font-family: 'Noto Sans TC';
+  color: #020202;
+}
+.container{
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.card{
+  width: calc(33.33% - 1rem);
+  border: 1px solid #F2F2F2;
+  border-radius: 1rem;
+  &-img{
+    transform-origin: center;
+    transition: 0.3s;
+  }
+  &:hover .card-img{
+    transform: scale(1.2);
+  }
+  &-text{
+    font-size: 14px;
+    line-height: 21px;
+    color: #525252;
+  }
+
+}
+.list-group-item{
+  border-top: #F2F2F2 1px solid;
+}
+.share-icon{
+  color: #020202;
+}
+
+
+// phone to tablet（在577-768px內都適用）
+@media screen and (max-width:768px) {
+  .card{
+    width: calc(50% - 1rem);
+  }
+}
+// phone(在414px以內都適用)=>因為圖片大小對大為414px
+@media screen and (max-width:414px) {
+  .card{
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+}
