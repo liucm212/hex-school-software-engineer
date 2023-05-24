@@ -307,7 +307,7 @@ img {
 }
 
 body {
-  font-family: "Noto Sans TC";
+  font-family: "Noto Sans TC", "sans-serif";
   color: #020202;
 }
 
@@ -338,8 +338,14 @@ body {
   border-top: #F2F2F2 1px solid;
 }
 
-.share-icon {
+.hashtag {
+  cursor: pointer;
+  text-decoration: none;
   color: #020202;
+}
+
+.share-icon {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

@@ -4,8 +4,12 @@
 @import '_fontSize' ;
 @import '_tools' ; 
 // 測試好將scss轉成css時自動將css檔案匯到css資料夾。
+
+// body內可以將基本會用到的設定都先設定起來，如"font-size", "font-weight", "line-height"
+// 而本次練習將這些屬性設定在html的body tag上。
 body{
-  font-family: 'Noto Sans TC';
+  // 默認字體是"sans-serif（無襯線字體）"，這是網頁議定可以選染出來的字體，當前面的字體無法用時就會替換成它。
+  font-family: 'Noto Sans TC', 'sans-serif';
   color: #020202;
 }
 .container{
@@ -33,8 +37,13 @@ body{
 .list-group-item{
   border-top: #F2F2F2 1px solid;
 }
-.share-icon{
+.hashtag{
+  cursor: pointer;
+  text-decoration: none;
   color: #020202;
+}
+.share-icon{
+  cursor: pointer;
 }
 
 
