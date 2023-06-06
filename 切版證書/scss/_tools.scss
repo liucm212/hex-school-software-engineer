@@ -1,0 +1,67 @@
+//! 紀錄各種功能性的classes的檔案
+
+//! position
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.fixed{
+  position: fixed;
+}
+
+//! display
+.d-block{
+  display: block;
+}
+.d-inlineBlock{
+  display: inline-block;
+}
+//! flex
+.d-flex{
+  display: flex;
+}
+.flex-column{
+  flex-direction: column;
+}
+.justify-content-center{
+  justify-content: center;
+}
+justify-content-flexStart{
+  justify-content: flex-start;
+}
+.justify-content-flexEnd{
+  justify-content: flex-end;
+}
+.justify-content-spaceBetween{
+  justify-content: space-between;
+}
+.justify-content-spaceAround{
+  justify-content: space-around;
+}
+.align-items-center{
+  align-items: center;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+//! overflow-hidden
+.overflow-hidden{
+  overflow: hidden;
+}
+
+
+//! text
+.ta{
+  &-center{
+    text-align: center;
+  }
+  &-left{
+    text-align: left;
+  }
+  &-right{
+    text-align: right;
+  }
+} 

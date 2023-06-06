@@ -1,0 +1,10 @@
+// import all the scss setting files into this file, then compile this file into css folder.
+@import '_base';
+@import '_fontSize';
+@import '_layout';
+@import '_reset';
+@import '_spaceSize';
+@import '_tools';
+@import '_utilities';
+@import 'layout';
+@import 'component';
