@@ -1,0 +1,170 @@
+body{
+  font-family: "Noto Sans TC", sans-serif;
+  color: #fff;
+  background-color: #1e1e1e;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.container{
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.header{
+  border-bottom: #fff 1px solid;
+}
+.logo{
+  max-width: 250px;
+}
+.banner{
+  margin-bottom: 10rem;
+}
+.service{
+  margin-bottom: 10rem;
+}
+.service-list-item{
+  width: calc(33.333% - 0.75rem);
+  border: 1px solid #525252;
+  padding: 5rem 2.5rem;
+  border-radius: 1rem;
+}
+.service img{
+  margin-bottom: 1.25rem;
+}
+.service h3{
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 5rem;
+}
+.partner li{
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+.mask{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.mask-to-right{
+  left: 0;
+  top: 0;
+  background: linear-gradient(to right, rgba(30, 30, 30, 1) 0%, rgb(39, 30, 30,0) 100%);
+}
+.mask-to-left{
+  left: 0;
+  top: 0;
+  background: linear-gradient(to left, rgba(30, 30, 30, 1) 0%, rgb(39, 30, 30,0) 100%);
+}
+
+
+/*
+什麼時候用模組化會比較好寫？
+- 當出現的改動是只有單項時，如每個section下方都margin-bottom:160;，就可以模組化，把class name寫在html中。
+*/ 
+// 若有版形式像卡片這樣的，我覺得可以用css統一排，因為他們基本上是長一樣，要改就直接在css改就好
+.rates{
+  .card{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem ;
+    margin: 0 0.75rem;
+    border-radius: 1rem;
+    background-color:rgba(255, 255, 255, 0.08);
+  }
+  .card-stars{
+    display: flex;
+    margin-bottom: 1.25rem;
+  }
+  .card-body{
+    padding-bottom: 1.5rem;
+    margin-bottom: auto
+    p{
+      line-height: 1.5;
+    }
+  }
+  .card-footer{
+    display: flex;
+    justify-content: flex-start;
+    .card-person{
+      margin-right: 1rem;
+    }
+    .card-intro{
+      // 會用標籤名寫css是因為其已經是最底層，不會干擾到其他人
+      h4{
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: 4px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+} 
+
+.socialMedia-item{
+  margin-right: 1.25rem;
+}
+
+
+
+// searchBar
+.searchBar{
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.searchBar-input{
+  background-color: #f2f2f2;
+}
+
+// AIcard
+.AIcard{
+  width: calc(33.33% - 1rem);
+  border: 1px solid #F2F2F2;
+  border-radius: 1rem;
+  &-img{
+    transform-origin: center;
+    transition: 0.3s;
+  }
+  &:hover .card-img{
+    transform: scale(1.2);
+  }
+  &-text{
+    font-size: 14px;
+    line-height: 21px;
+    color: #525252;
+  }
+
+}
+.list-group-item{
+  border-top: #F2F2F2 1px solid;
+}
+.hashtag{
+  cursor: pointer;
+  text-decoration: none;
+  color: #020202;
+}
+.share-icon{
+  cursor: pointer;
+}
+
+
+// phone to tablet（在577-768px內都適用）
+@media screen and (max-width:768px) {
+  .AIcard{
+    width: calc(50% - 1rem);
+  }
+}
+// phone(在414px以內都適用)=>因為圖片大小對大為414px
+@media screen and (max-width:414px) {
+  .AIcard{
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+}
