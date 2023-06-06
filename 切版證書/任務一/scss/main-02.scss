@@ -1,10 +1,3 @@
-@import '_reset' ; 
-@import '_base' ; 
-@import '_spaceSize' ; 
-@import '_fontSize' ;
-@import '_tools' ; 
-// 測試好將scss轉成css時自動將css檔案匯到css資料夾。
-
 // body內可以將基本會用到的設定都先設定起來，如"font-size", "font-weight", "line-height"
 // 而本次練習將這些屬性設定在html的body tag上。
 body{
@@ -16,7 +9,7 @@ body{
   max-width: 1296px;
   margin: 0 auto;
 }
-.card{
+.AIcard{
   width: calc(33.33% - 1rem);
   border: 1px solid #F2F2F2;
   border-radius: 1rem;
@@ -49,13 +42,13 @@ body{
 
 // phone to tablet（在577-768px內都適用）
 @media screen and (max-width:768px) {
-  .card{
+  .AIcard{
     width: calc(50% - 1rem);
   }
 }
 // phone(在414px以內都適用)=>因為圖片大小對大為414px
 @media screen and (max-width:414px) {
-  .card{
+  .AIcard{
     width: 100%;
     margin-bottom: 0.75rem;
   }
